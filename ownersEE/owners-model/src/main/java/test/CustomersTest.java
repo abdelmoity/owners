@@ -22,8 +22,7 @@ public class CustomersTest {
     private void test() {
         CustomersClient c=new CustomersClient();
         CustomersDto dto= new CustomersDto();
-        dto.setId(11L);
-        dto.setName("Alii");
+        dto.setName("mohammed2");
         c.postCustomer(dto);
     }
     
