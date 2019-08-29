@@ -22,7 +22,7 @@ public class CustomersTest {
     private void test() {
         CustomersClient c=new CustomersClient();
         CustomersDto dto= new CustomersDto();
-        dto.setName("mohammed2");
+        dto.setName("mostafa");
         c.postCustomer(dto);
     }
     
