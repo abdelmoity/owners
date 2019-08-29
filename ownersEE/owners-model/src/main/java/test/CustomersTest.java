@@ -7,6 +7,7 @@ package test;
 
 import io.ownersee.owners.model.dto.CustomersDto;
 import io.ownersee.owners.model.jpa.client.CustomersClient;
+import java.util.List;
 
 /**
  *
@@ -24,6 +25,8 @@ public class CustomersTest {
         CustomersDto dto= new CustomersDto();
         dto.setName("mostafa");
         c.postCustomer(dto);
+        List<CustomersDto> list= c.getAll();
+        System.out.println("list.."+list);       
     }
     
 }
